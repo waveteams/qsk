@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>QSK INTERPRETER STANDALONE</title>
+</head>
+<body>
+	<center>
+	<h1>QSKRIPT REL.2 BY TapelineYT</h1>
+	<hr>
+	<h1>Документация</h1>
+	<p>ALERT или ОБЪЯВИТЬ [значение] (ALERT:Привет!)</p>
+	<p>LOG или ЛОГ [значение] (LOG:Привет!)</p>
+	<p>LET или ЗАПИСАТЬ В [переменная] CONTAIN или ЗНАЧЕНИЕ [значение] (LET:var CONTAIN val)</p>
+	<p>VARDUMP или ЗНАЧЕНИЕ [переменная] (VARDUMP:variable)</p>
+	
+	<p>EVALJS или ВЫПОЛНИТЬ [код] (EVALJS:alert('Тест'))</p>
+	<hr>
+	<h1>Код</h1>
+	<textarea id="code" style="color: #fff; background: #111; font-size: 18px; width: 100%; height: 500px;" rows="10" cols="40">
+// QSK CODE ЗДЕСЬ
+// комментарии начинаются с '//'</textarea>
+	<button onclick="runqsk(gettextarea('code'))">RUN</button>
+	<h1>Консоль</h1>
+	<textarea id="console" style="color: #fff; background: #111; font-size: 18px; width: 100%; height: 500px;" rows="10" cols="40" disabled="true">QSK CONSOLE</textarea>
+	</center>
+</body>
+</html>
+<script type="text/javascript" src="qsk.js"></script>
